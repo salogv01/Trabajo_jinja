@@ -11,14 +11,14 @@ templates = Jinja2Templates(directory="templates")
 
 @app.get("/")
 async def Peliculas(request: Request):
-    return templates.TemplateResponse(request=request, name="pelicula.html", context={"pelicula": "Interestelar", "director": "Christopher Nolan", "anio": 2014, "nombre": "Tomás"})
+    return templates.TemplateResponse(request=request, name="pelicula.html", context={"pelicula": "Interestelar", "director": "Christopher Nolan", "anio": 2014, "nombre": "Salomé"})
 
 
 colores = ["Red", "Blue", "Green", "Yellow", "Black"]
 
 @app.get("/colores")
 async def Colores(request: Request):
-    return templates.TemplateResponse(request=request, name="colores.html", context={"colores": colores, "nombre": "Tomás"})
+    return templates.TemplateResponse(request=request, name="colores.html", context={"colores": colores, "nombre": "Salomé"})
 
 equipos = {
 
@@ -58,4 +58,4 @@ equipos = {
 
 @app.get("/equipos")
 async def mostrar_equipos(request: Request):
-    return templates.TemplateResponse(request=request, name="equipos.html", context={"equipos": equipos, "nombre": "Tomás"})
+    return templates.TemplateResponse(request=request, name="equipos.html", context={"equipos": equipos, "nombre": "Salomé"})
