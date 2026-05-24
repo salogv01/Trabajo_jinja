@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Colores{% endblock %}
+
+{% block content %}
+    <h1>Mi Colores Favoritos</h1>
+    
+    {% for color in colores %}
+    <div
+        style="
+            background-color: {{ color }};
+            border: 4px solid {{ loop.cycle('black', 'gray') }};
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+            color: white;
+    ">
+    {{ color }}</div>
+    {% endfor %}
+
+    <a href="/">Película</a>
+    <a href="/equipos">Equipos</a>
+    
+{% endblock %}

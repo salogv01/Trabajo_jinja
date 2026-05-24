@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Pelicula Favorita{% endblock %}
+
+{% block content %}
+    <h1>Mi Pelicula Favorita</h1>
+
+    <hr>
+
+    <div>
+
+        <h2 style="color: #2c5364;">{{ pelicula }}</h2>
+
+        <p style="color: #2c5364;">
+            <strong>Director:</strong> {{director}}
+        </p>
+
+        <p style="color: #2c5364;">
+            <strong>Año:</strong> {{ anio }}
+        </p>
+
+    </div>
+
+    <a href="/colores">Colores</a>
+    <a href="/equipos">Equipos</a>
+{% endblock %}
